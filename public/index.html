@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Scraping With Mongoose</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: rgb(211, 216, 218)
+    }
+
+    #container {
+      margin: auto;
+      padding: 5%
+    }
+
+    #articles {
+      display: inline-block;
+      overflow: auto;
+      width: 60%;
+      height: 700px;
+    }
+
+    #notesCard {
+      position: fixed;
+      bottom: 20%;
+    }
+
+    textarea,
+    input {
+      display: block;
+      width: 100%;
+      background-color: rgb(175, 174, 169);
+    }
+
+    input {
+      height: 36px;
+      font-size: 24px;
+    }
+
+    textarea {
+      height: 200px;
+      font-size: 18px;
+    }
+
+    .card {
+      margin: .5%;
+      max-width: 500px;
+    }
+
+    .btn {
+      margin: .5%;
+    }
+
+    .black {
+      color: rgb(71, 71, 67)
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="container">
+    <div class="row">
+      <div class="col">
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">Video List <i class="fab fa-youtube"></i></h1>
+            <p class="lead">It's like Youtube if you tube was a lot less interesting.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div id="video"></div>
+      </div>
+      <div class="col">
+        <div id="notes"></div>
+      </div>
+    </div>
+  </div>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
